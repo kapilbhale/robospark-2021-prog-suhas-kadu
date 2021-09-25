@@ -102,19 +102,19 @@ public:
 
 int main() {
     Box b1;
-    Box b2(10, 20 30);
-    Box b3(10.5, 20.5 30.5);
+    Box b2(10, 20, 30);
+    Box b3(10.5, 20.5, 30.5);
     cout<<"Volume of Box1 is "<<b1.getVolume()<<endl;
-    cout<<"Volume of Box1 is "<<b1.getVolume()<<endl;
-    cout<<"Volume of Box1 is "<<b1.getVolume()<<endl;
+    cout<<"Volume of Box2 is "<<b2.getVolume()<<endl;
+    cout<<"Volume of Box3 is "<<b3.getVolume()<<endl;
     
     b1.setLength(4);
     b1.setBreadth(2);
     b1.setHeight(6);
     
-    cout << "Volume of b1 < b2 is " << (b1 < b2) << endl;
-    cout << "Volume of b1 <= b2 is " << (b1 <= b2) << endl;
-    cout << "Volume of b1 > b2 is " << (b1 > b2) << endl;
-    cout << "Volume of b1 >= b2 is " << (b1 >= b2) << endl;
-    cout << "Volume of b1 == b2 is " << (b1 == b2) << endl;
+    cout << "Volume of b1 < b2 is " << ((b1 < b2) ? "True" : "False" ) << endl;
+    cout << "Volume of b1 <= b2 is " << ((b1 <= b2)? "True" : "False" )  << endl;
+    cout << "Volume of b1 > b2 is " << ((b1 > b2)? "True" : "False"  )<< endl;
+    cout << "Volume of b1 >= b2 is " << ((b1 >= b2)? "True" : "False" ) << endl;
+    cout << "Volume of b1 == b2 is " << ((b1 == b2)? "True" : "False" ) << endl;
 }
