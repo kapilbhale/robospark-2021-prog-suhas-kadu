@@ -5,7 +5,7 @@ class Personal
 {
 protected:
     string name, surname, address, dob;
-    double mobile_no;flutter doctor
+    double mobile_no;
     Personal()
     {
         name, surname, address, dob = "";
